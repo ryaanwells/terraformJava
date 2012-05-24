@@ -1,0 +1,23 @@
+import java.util.Random;
+public class map{
+    private int[][] terrain = new int[10][10];
+    map(){
+	Random randomGenerator = new Random();
+	for(int i=0; i<10; i++){
+	    for(int j=0; j<10; j++){
+		terrain[i][j] =(int) randomGenerator.nextInt(5);
+	    }
+	}
+    }
+    map(String p){
+	for(int i=0; i<10; i++){
+	    for(int j=0; j<10; j++){
+		terrain[i][j] = 1;
+	    }
+	}
+    }
+
+    public int get(int x, int y){
+	return terrain[x][y];
+    }
+}
