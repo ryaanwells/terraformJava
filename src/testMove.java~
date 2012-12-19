@@ -1,9 +1,0 @@
-public static void main(String args[]){
-	unit unitA = new unit(2,4,4);
-	unit unitB = new unit(4,4,4);
-	map Map = new map("");
-	movement MA = new movement(Map,unitA);
-	movement MB = new movement(Map,unitB);
-	System.out.print(MA.toString());
-	System.out.print(MB.toString());
-	
