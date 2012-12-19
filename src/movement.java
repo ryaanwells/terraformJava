@@ -39,11 +39,9 @@ public class movement{
     }
 
     public void processAccessable(){
-	if(canMove!=null){
-	    int movement = workingUnit.getMovement();
-	    int startX = workingUnit.getX();
-	    int startY = workingUnit.getY();
-	    probeNext(startX,startY,startX,startY,movement);
-	}
+	int movement = workingUnit.getMovement();
+	int startX = workingUnit.getX();
+	int startY = workingUnit.getY();
+	probeNext(startX,startY,startX,startY,movement);
     }
 }
