@@ -7,7 +7,7 @@ public class movement{
     private int offsetX;
     private int offsetY;
     //variables easily changed for actual units
-    private int enemy = 1;
+    private int enemy = 3;
     private int bonus = 2;
 
     movement(map M, unit U){
